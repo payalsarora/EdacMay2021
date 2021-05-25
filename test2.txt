@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Prog1 {
+
+	public static void main(String[] args) {
+		
+		Student s=new Student();
+		s.get(111,"Payal",'A');
+		s.get(75, 98);
+		s.display();
+		}
+	
+	
+
+}
+class Student
+{
+	private int id;
+	private String name;
+	private char division;
+	int maths;
+	int english;
+	void get(int id,String name,char division)
+	{
+		this.id=id;
+		this.name=name;
+		this.division=division;
+	}
+	void get(int maths,int english)
+	{
+		this.maths=maths;
+		this.english =english;
+	}
+	
+	
+	void display()
+	{
+		System.out.println("ID is "+id+" name is "+name+" Division is "+division);
+		System.out.println("maths marks are : "+ maths+" English marks are : "+english);
+	}
+}
+
